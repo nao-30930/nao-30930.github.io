@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: bottom;
+}
+
+/* 全ページ共通 */
+header{
+    padding: 30px 0;
+}
+h1{
+    text-align: center;
+}
+
+.g-nav{
+    width: 100%;
+    height: 50px;
+    background-color:#734338;
+    margin-bottom: 80px;
+}
+
+.g-nav>ul{
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.g-nav li{
+    width: 20%;
+    height: 50px;
+}
+.g-nav a{
+    display: block;
+    text-align: center;
+    line-height: 50px;/* .g-navのhightと同じ値に設定する */
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+
+.g-nav li:first-of-type>a{
+    border-left: 1px solid #fff;
+}
+
+.g-nav a:hover{
+    color: #734338;
+    background-color: #fff;
+}
+
+main{
+    width: 960px;
+    margin: 0 auto 80px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:#734338;
+}
+footer>p{
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+/* トップページ設定 */
+
+.main-visual{
+    margin-bottom: 80px;
+}
+.main-copy>h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main-copy>p{
+    width: 600px;
+    margin: 0 auto;
+    line-height: 2.4;
+}
+/* 季節ページ設定 */
+.wrapper{
+    display: flex;
+}
+.photo{
+    margin-right: 50px;
+}
+.season-txt h2{
+    margin-bottom: 20px;
+}
+.season-txt p{
+    line-height: 1.8;
+}
+
+/* 個別ページ */
+
+.spring>.g-nav{
+    background-color:#DC9FB4 ;
+}
+.spring>footer{
+    background-color:#DC9FB4 ;
+}
+
+.summer>.g-nav{
+    background-color:#00896C;
+}
+.summer>footer{
+    background-color:#00896C;
+}
+.fall>.g-nav{
+    background-color:#E98B2A ;
+}
+.fall>footer{
+    background-color:#E98B2A;
+}
+.winter>.g-nav{
+    background-color:#6A4C9C ;
+}
+.winter>footer{
+    background-color:#6A4C9C ;
+}
